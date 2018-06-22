@@ -7,5 +7,6 @@
 
 ## 書いてる人
 工大祭実行委員会ネットワーク局有志
-https://koudaisai.jp
-https://jizi.jp
+
+- https://koudaisai.jp
+- https://jizi.jp
