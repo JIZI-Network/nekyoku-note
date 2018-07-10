@@ -1,19 +1,24 @@
 <template lang="pug">
   main
     aside.nav-bar
-      div.app-name
-        | Nekyoku Note
-    nuxt.content-wrap
+      div
+        input(v-model="search_text" placeholder="Type to search").search-box
+        div
+    div.content
+      nuxt.content-wrap
 </template>
 
 <script>
 export default {
-  
+  data () {
+    return {
+      search_text: ""
+    }
+  }
 }
 </script>
 
-
-<style>
+<style lang="scss">
 @import url("https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
 @import url("highlight.js/styles/solarized-light.css");
@@ -39,6 +44,18 @@ tt, code, kbd, sample {
   margin: 0;
 }
 
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 body {
   color: #666666;
 }
@@ -61,22 +78,47 @@ main {
 
 .nav-bar {
   position: fixed;
-  width: 300px;
+  width: 200px;
   height: 100%;
   border-right: 1px solid #cccccc;
 }
 
-.content-wrap {
+.content {
+  width: 100%;
   position: absolute;
-  left: 300px;
+  left: 200px;
 }
 
-.app-name {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 10px;
-  padding: 0;
-  text-align: center;
+.content-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 60px 60px;
 }
+
+.search-box {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 0;
+  border-bottom: 1px solid #cccccc;
+  color: #666666;
+  font-size: 14px;
+  transition: all .6s ease;
+  /* background: rgba(200,200,200,0.1); */
+  &:focus {
+    outline: none;
+    box-shadow: 0 1px 3px 0 gray;
+  }
+}
+
+.search-box::placeholder {
+  transition: all .6s ease;
+  font-size: 12px;
+}
+
+.search-box:focus::placeholder {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
 
 </style>

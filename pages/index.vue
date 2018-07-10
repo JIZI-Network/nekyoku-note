@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      top page
+      <h1>Nekyoku Note</h1>
       <nuxt-link to="/about">about</nuxt-link>
     </div>
   </section>
