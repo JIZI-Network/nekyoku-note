@@ -17,6 +17,7 @@
     "@nuxtjs/markdownit": "^1.2.1",
     "@nuxtjs/pwa": "^2.0.8",
     "ajv": "^6.5.2",
+    "hoek": "^4.2.1",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
