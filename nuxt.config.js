@@ -42,6 +42,9 @@ module.exports = {
       }
     }
   },
+  generate: {
+    dir: 'docs'
+  },
   manifest: {
     name: 'nekyoku-note',
     short_name: 'ne',
