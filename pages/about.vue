@@ -1,4 +1,3 @@
 <template lang="md">
-# About
-
+# このサイトについて
 </template>
