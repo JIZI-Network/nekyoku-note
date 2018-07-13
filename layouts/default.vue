@@ -278,6 +278,7 @@ main {
 
 .content code {
   display: block;
+  overflow-x: scroll;
   width: 100%;
   padding: 4px 5px;
   border: solid 1px #bbbbbb;
