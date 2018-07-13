@@ -42,7 +42,7 @@ export default {
 @import url("highlight.js/styles/solarized-light.css");
 
 html {
-  font-family: YakuHanRP, "Rounded Mplus 1c","Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: YakuHanRP, Meiryo, "Rounded Mplus 1c","Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
