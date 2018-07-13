@@ -76,6 +76,12 @@
 puts 1 + 1
 ```
 
+```javascript
+function test() {
+    console.log("Hello, World");
+}
+```
+
 これはコードブロックです。
 
 ## テーブル

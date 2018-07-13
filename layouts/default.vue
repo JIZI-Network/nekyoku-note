@@ -277,10 +277,12 @@ main {
 }
 
 .content code {
+  display: block;
   width: 100%;
   padding: 4px 5px;
   border: solid 1px #bbbbbb;
   border-radius: 3px;
+  margin: 10px 0;
 }
 
 .content code.language-ruby::before {
