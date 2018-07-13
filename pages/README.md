@@ -1,7 +1,7 @@
-# PAGES
+## ページの追加方法
 
-This directory contains your Application Views and Routes.
-The framework reads all the .vue files inside this directory and creates the router of your application.
+フォルダ構成がそのままルーティングになります.
+ページはvue拡張子で作成してください.
 
-More information about the usage of this directory in the documentation:
-https://nuxtjs.org/guide/routing
+vueコンポーネントファイル内ではtemplateタグで囲むことでコンテンツを作成できます.
+templateタグの属性にlang="md"を指定するとMarkdownでの記入が可能です.

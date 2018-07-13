@@ -6,12 +6,15 @@
     aside.nav-bar
       input(v-model="search_text" placeholder="Type to search").search-box
       div.navigation
-        nuxt-link(to="/")
-          | トップ
-        br
         nuxt-link(to="/about/")
           | このサイトについて
         br
+        nuxt-link(to="/html/")
+          | HTML
+        br
+        div(v-if="$route.name.indexOf('html',0)==0")
+          nuxt-link(to="/html/basic")
+            | 基礎
         nuxt-link(to="/test/")
           | Markdown表記
       div.footer
@@ -124,6 +127,7 @@ main {
   min-height: 100vh;
   padding-left: 250px;
   transition: all .6s ease;
+  overflow-x: hidden;
 }
 
 .content-wrap {
@@ -164,6 +168,7 @@ main {
 
 .top-bar {
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 40px;
   box-sizing: border-box;
@@ -210,7 +215,7 @@ main {
 
 .menu-button {
   position: fixed;
-  z-index: 0;
+  z-index: 50;
   top: 5px;
   left: 0;
   width: 40px;
@@ -239,7 +244,6 @@ main {
 
 @media screen and (max-width:767px){
   .nav-bar {
-    position: absolute;
     transform: translateX(-100%);
   }
   .content {
@@ -255,4 +259,40 @@ main {
     padding: 100px 30px 60px;
   }
 }
+
+h1 {
+  margin-top: 50px;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #cccccc;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+}
+
+.content code {
+  width: 100%;
+  padding: 4px 5px;
+  border: solid 1px #bbbbbb;
+  border-radius: 3px;
+}
+
+.content code.language-ruby::before {
+  content: 'ruby';
+  display: block;
+  position: absolute;
+  top: -1em;
+  left: 5px;
+}
+
+.content p {
+  margin: 10px 0;
+}
+
 </style>
