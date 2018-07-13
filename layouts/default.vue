@@ -260,11 +260,11 @@ main {
   }
 }
 
-h1 {
+.content h1 {
   margin-top: 50px;
 }
 
-h1::after {
+.content h1::after {
   content: '';
   display: block;
   width: 100%;
@@ -272,7 +272,7 @@ h1::after {
   background: #cccccc;
 }
 
-h2, h3, h4, h5, h6 {
+.content h2, h3, h4, h5, h6 {
   margin-top: 20px;
 }
 

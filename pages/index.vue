@@ -49,4 +49,9 @@ export default {
   font-size: 30px;
 }
 
+.top-banner h1::after {
+  content: '';
+  display: none;
+}
+
 </style>
