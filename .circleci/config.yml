@@ -32,8 +32,19 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
       # run tests!
-      - run: yarn test
+      # - run: yarn test
+  deploy:
+    requires:
+      - build
+    steps:
+      - run:
+        command:
+          - git config --global user.name "circleci"
+          - git config --global user.email "circleci@chatbox-inc.com"
+          - npm run generate
+          - npm run deploy
+          - git push
+  
 
 
