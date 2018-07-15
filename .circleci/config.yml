@@ -32,7 +32,9 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn run generate
+      - run: 
+        - yarn run generate
+        - yarn run deploy
       # run tests!
       # - run:
       #   - git config --global user.name "circleci"
