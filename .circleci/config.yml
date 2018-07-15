@@ -33,12 +33,12 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       # run tests!
-      - run: |
-        git config --global user.name "circleci"
-        git config --global user.email "circleci@chatbox-inc.com"
-        npm run generate
-        npm run deploy
-        git push
+      - run:
+        - git config --global user.name "circleci"
+        - git config --global user.email "circleci@chatbox-inc.com"
+        - npm run generate
+        - npm run deploy
+        - git push
   
 
 
