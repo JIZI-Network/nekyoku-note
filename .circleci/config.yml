@@ -38,13 +38,12 @@ jobs:
     requires:
       - build
     steps:
-      - run:
-        command:
-          - git config --global user.name "circleci"
-          - git config --global user.email "circleci@chatbox-inc.com"
-          - npm run generate
-          - npm run deploy
-          - git push
+      - run: |
+        git config --global user.name "circleci"
+        git config --global user.email "circleci@chatbox-inc.com"
+        npm run generate
+        npm run deploy
+        git push
   
 
 
