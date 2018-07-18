@@ -35,6 +35,16 @@ JavaScriptでHTMLの要素をいろいろいじるための準備、いじり方
 
 指定する方法はいろいろあります。
 
+- 要素を一つだけ取得する
+
+	- document.getElementById(hoge)
+
+		idが"hoge"の要素を取得します。
+
+	- document.querySelector(hogehogehoge)
+
+		hogehogehogeの条件を満たす要素のうち、最初の要素を取得します。
+
 ``` javascript
 //JavaScript
 
