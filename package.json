@@ -1,0 +1,34 @@
+{
+  "name": "nekyoku-note",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "unipota <unipota@outlook.jp>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages"
+  },
+  "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.1",
+    "@nuxtjs/pwa": "^2.0.8",
+    "ajv": "^6.5.2",
+    "hoek": "^4.2.1",
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.2",
+    "pug-html-loader": "^1.1.5",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^7.0.3"
+  }
+}
