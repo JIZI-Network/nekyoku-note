@@ -1,3 +1,4 @@
+<template lang="md">
 # PHPとは
 PHPとは、"PHP: Hypertext Preprocessor"の略です(再帰)
 まず、"Hypertext"とは、HTML(Hyper Text Markup Language)のことです。
@@ -41,3 +42,4 @@ PHPはバックエンドで動く用に作られたプログラミング言語�
 バックエンド用に作られはしましたが、もちろんそれ以外の用途でも使えます。人は転用が得意です。
 
 そこで、まず自分のパソコンにPHPが動く環境を用意して簡単なPHPプログラミング言語をしてみましょう。
+</template>

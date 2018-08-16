@@ -1,3 +1,4 @@
+<template lang="md">
 # PHPの基礎
 
 まず、PHPのプログラムは「○○.php」というファイル名で保存します。
@@ -347,3 +348,4 @@ foreach($radius as $r){
     }
 }
 ?>
+</template>
